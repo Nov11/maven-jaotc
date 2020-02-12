@@ -32,8 +32,12 @@
                 <configuration>
                     <archive>
                         <manifest>
+                            <!--                            w/o dependencies-->
                             <addClasspath>true</addClasspath>
+                            <!--                            w/o path prefix before dependencies, e.g. : xxx/repository/lettuce-core-5.0.4.RELEASE.jar-->
                             <classpathPrefix>${settings.localRepository}</classpathPrefix>
+                            <!--                            w/o path prefix just as maven store jars e.g.: xxx/io/lettuce/lettuce-core/5.0.4.RELE
+                             ASE/lettuce-core-5.0.4.RELEASE.jar-->
                             <classpathLayoutType>repository</classpathLayoutType>
                         </manifest>
                     </archive>
